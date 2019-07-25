@@ -6,4 +6,5 @@ const char* hello() {
 
 int main() {
 	std :: cout << hello() << std :: endl;
+	std :: cout << "Good evening, yosh!" << std :: endl;
 }
