@@ -1,9 +1,8 @@
 #include <iostream>
 #include <vector>
-using std :: vector;
 
 int main() {
-	vector<int> array;
+	std :: vector<int> array;
 	for (int i = 0; i != 100; ++i)
 		array.push_back(i);
 	// print out
