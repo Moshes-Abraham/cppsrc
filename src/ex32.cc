@@ -2,18 +2,20 @@
 
 int main()
 {
-  unsigned int num;
-  char score;
-  std :: cin >> num;
-  if (num == 5)
-    score = 'a';
-  else if (num == 4)
-    score = 'b';
-  else if (num == 3)
-    score = 'c';
-  else if (num == 2)
-    score = 'd';
-  else
-    score = 'e';
-  std :: cout << score;
+  int item1, item2;
+  while (std :: cin >> item1 >> item2)
+    {
+      try
+        {
+
+        } catch (std :: runtime_error err)
+        {
+          std :: cout << err.what()
+                      << "\nTry Again? Enter y or n" << std :: endl;
+          char c;
+          std :: cin >> c;
+          if (!std :: cin || c == 'n')
+            break;
+        }
+    }
 }
